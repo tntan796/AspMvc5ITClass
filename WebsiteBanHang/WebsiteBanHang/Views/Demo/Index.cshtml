@@ -1,0 +1,18 @@
+﻿@model WebsiteBanHang.Models.Student
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Trang Demo</h2>
+
+<form method="post" action="Index">
+    Mã HS: <input type="text" name="Id" /><br />
+    Họ tên: <input type="text" name="Name" /><br />
+    <input type="submit" value="submit" />
+</form>
+
+@if (Model != null)
+{
+    <h3>@Model.Id</h3>
+    <h3>@Model.Name</h3>
+}
