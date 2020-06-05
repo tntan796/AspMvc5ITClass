@@ -24,5 +24,17 @@ namespace WebsiteBanHang.Controllers
             st.Name = f.Get("Name");
             return View(st);
         }
+
+        [HttpGet]
+        public ActionResult Demo()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Demo(FormCollection form)
+        {
+            return View();
+        }
     }
 }

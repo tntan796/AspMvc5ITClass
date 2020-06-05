@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Demo";
+}
+<h2>Demo</h2>
+
+
+@using (Html.BeginForm("Demo", "Demo", FormMethod.Post))
+{
+    @Html.TextBox("TextboxName", "TextboxValue", new { @id = "textboxid" })
+    <input type="submit" value="Submit"/>
+}
